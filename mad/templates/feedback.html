@@ -1,0 +1,154 @@
+{%extends 'patient_layout.html'%}
+{%block content%}
+
+<br>
+<br>
+<div class="banner-bottom">
+	<div class="container">
+		<div class="inner_sec_info_agileits_w3">
+		  <h1 class="heading-agileinfo">Feedback</h1>
+		  {%if d%}
+		  <br><h2>{{d}}</h2><br>
+		  {%endif%}
+			<div class="contact-form">
+					 <form method="post">
+					
+						 <div class="left_form">
+						<div>
+							<span><label>Name</label></span>
+							<span><input name="name" readonly="" type="text" value="{{f.name}}" class="textbox" required=""></span>
+						</div>
+						<div>
+							<span><label>E-mail</label></span>
+							<span><input name="email" type="text" readonly="" value="{{f.email}}" class="textbox" required=""></span>
+						</div>
+						<div>
+							 <span><label>contact</label></span>
+							<span><input type="text"  name="number"readonly="" value="{{f.number}}" pattern="[0-9]{10}" maxlength="10"   class="textbox" required=""></span>
+						</div>
+					</div>
+					<div class="right_form">
+							<div>					    	
+								<span><label>Message</label></span>
+								<span><textarea name="text" required=""> </textarea></span>
+							</div>
+						   <div>
+								<span><input type="submit" value="Send" class="myButton"></span>
+						  </div>
+					</div>
+					<div class="clearfix"></div>
+					</form>
+			  </div>
+		</div>
+	
+
+	</div>
+</div>
+
+
+
+
+	<div class="position-relative">
+		<div class="shape overflow-hidden">
+		  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+		  </svg>
+		</div>
+		</div>
+	</div>
+
+    <style>
+      body {
+  font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+  height: 150px;
+  background: rgb(243, 1, 1);
+ 
+}
+
+.sidenav {
+  height: 100%;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.main {
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+  .login-form{
+      margin-top: 10%;
+  }
+
+  .register-form{
+      margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .main{
+      margin-left: 40%; 
+  }
+
+  .sidenav{
+      width: 40%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+  }
+
+  .login-form{
+      margin-top: 80%;
+  }
+
+  .register-form{
+      margin-top: 20%;
+  }
+}
+
+
+.login-main-text{
+  margin-top: 20%;
+  padding: 60px;
+  color: #fff;
+}
+
+.login-main-text h2{
+  font-weight: 300;
+}
+
+.btn-black{
+  background-color: #000 !important;
+  color: #fff;
+}
+    </style>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

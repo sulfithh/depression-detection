@@ -1,0 +1,149 @@
+
+{%extends 'patient_layout.html'%}
+{%block content%}
+<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" style="margin-left: 150px;">
+	<div class="row">
+		<!--<h2>Your Suggestions</h2>-->
+	</div>
+    
+    <div class="row">
+    
+    <div class="col-md-6" style="margin-left:250px; margin-top:50px;">       <!-- Standard button -->
+
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<a href="/diet"><button type="button" style="height:50px;" class="btn btn-primary ribbon"><b><h4>DIET</h4></b></button></a><br><br>
+
+<!-- Indicates a successful or positive action -->
+<!-- <a href="/workout"><button type="button" style="height:50px;" class="btn btn-success ribbon"><b><h4>WORKOUT</h4></b></button></a><br><br> -->
+
+<!-- Contextual button for informational alert messages -->
+<a href="/yoga"><button type="button" style="height:50px;" class="btn btn-info ribbon"><b><h4>YOGA & WORKOUT</h4></b></button></a><br><br>
+
+<!-- Indicates caution should be taken with this action -->
+<a href="/music"><button type="button" style="height:50px;" class="btn btn-warning ribbon"><b><h4>MUSIC</h4></b></button></a><br>
+
+
+</div>
+  
+ 
+    
+ 
+    </div>
+    
+    
+</div>
+
+<style>
+
+
+/*Remove that CSS*/
+.col-md-3 {
+    margin-left:5%;
+    }
+/*Remove that CSS*/
+
+
+
+button {
+  margin: 20px 0;
+  line-height: 34px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  outline:none !important;
+  width:100%;
+}
+
+button:active {
+
+  outline:none;
+}
+
+button.ribbon {
+  
+  outline:none;
+  outline-color: transparent;
+}
+button.ribbon:before, button.ribbon:after {
+  top: 5px;
+  z-index: -10;
+}
+button.ribbon:before {
+  border-color: #53dab6 #53dab6 #53dab6 transparent;
+  left: -25px;
+  border-width: 17px;
+}
+button.ribbon:after {
+  border-color: #53dab6 transparent #53dab6 #53dab6;
+  right: -25px;
+  border-width: 17px;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0;
+  outline:none;
+}
+
+button.btn-default:before {
+  border-color: #757575 #757575 #757575 transparent;
+    }
+    button.btn-default:after {
+  border-color: #757575 transparent #757575 #757575;
+    }
+    
+    
+    
+    button.btn-primary:before {
+  border-color: #2e6da4 #2e6da4 #2e6da4 transparent;
+    }
+    button.btn-primary:after {
+  border-color: #2e6da4 transparent #2e6da4 #2e6da4;
+    }
+    
+    
+    button.btn-info:before {
+  border-color: #269abc #269abc #269abc transparent;
+    }
+    button.btn-info:after {
+  border-color: #269abc transparent #269abc #269abc;
+    }
+
+    button.btn-success:before {
+  border-color: #398439 #398439 #398439 transparent;
+    }
+    button.btn-success:after {
+  border-color: #398439 transparent #398439 #398439;
+    }
+    
+    
+    button.btn-warning:before {
+  border-color: #d58512 #d58512 #d58512 transparent;
+    }
+    button.btn-warning:after {
+  border-color: #d58512 transparent #d58512 #d58512;
+    }
+    
+    
+    button.btn-danger:before {
+  border-color: #ac2925 #ac2925 #ac2925 transparent;
+    }
+    button.btn-danger:after {
+  border-color: #ac2925 transparent #ac2925 #ac2925;
+    }
+    
+    
+
+</style>
+
+{%endblock %}
